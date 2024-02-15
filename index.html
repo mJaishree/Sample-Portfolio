@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>Your Resume</title>
+    <style>
+        body {
+            background-color: rosybrown;
+        }
+
+        .container {
+            background-color: rgb(47, 44, 44);
+            color: rosybrown;
+            margin-top: 5%;
+        }
+
+        .text-center {
+            margin-bottom: 4%;
+        }
+
+        .profile-img {
+            border-radius: 50%;
+            width: 200px;
+        }
+
+        .collapsible-section {
+            margin-top: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .collapsible-section-header {
+            padding: 10px;
+            cursor: pointer;
+            background-color: #f1f1f1;
+        }
+
+        .collapsible-section-content {
+            padding: 15px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-center">
+                <div class="mb-4">
+                    <img src="photo.jpg" alt="Your Name" class="img-fluid profile-img">
+                    <h1>Jaishree M</h1>
+                    <p style="color: aliceblue;">IF I BELIEVE IT , I CAN DO IT!!!</p>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <!-- Summary -->
+                <div class="collapsible-section">
+                    <div class="collapsible-section-header" onclick="toggleSection('SummaryContent')">Summary</div>
+                    <div id="SummaryContent" class="collapsible-section-content">Passionate Frontend Developer dedicated to crafting seamless and visually captivating user experiences. Proficient in HTML, CSS, and JavaScript,Bootstrap with expertise in React, React router, Redux and responsive design. Committed to delivering pixel-perfect interfaces and staying updated on cutting-edge technologies for optimal user satisfaction.</div>
+                </div>
+
+                <div class="collapsible-section">
+                    <div class="collapsible-section-header" onclick="toggleSection('educationContent')">Education</div>
+                    <div id="educationContent" class="collapsible-section-content">
+                        <p>B.Tech Information Technology , National Engineering College,Thoothukudi </p>
+                        <p style="color: aliceblue;">CGPA : 74.7%</p>
+
+                        <p>Higher Secondary, Subbiah Vidyalaiyam,Thoothukudi </p>
+                        <p style="color: aliceblue;">Average : 77.4%</p>
+
+                        <p>SSLC , Subbiah Vidyalaiyam,Thoothukudi </p>
+                        <p style="color: aliceblue;">Average : 94%</p>
+                    </div>
+                </div>
+                <!-- Skills -->
+                <div class="collapsible-section mt-4">
+                    <div class="collapsible-section-header" onclick="toggleSection('skillsContent')">Skills</div>
+                    <div id="skillsContent" class="collapsible-section-content">
+                        <ul>
+                            <li>HTML, CSS, JavaScript,Typescript</li>
+                            <li>Bootstrap, SCSS, Material UI</li>
+                            <li>Front-end frameworks (React)</li>
+                            <li>React Router, Redux, Context</li>
+                            <li>Microsoft Office</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Work Experience -->
+                <div class="collapsible-section mt-4">
+                    <div class="collapsible-section-header" onclick="toggleSection('workContent')">Work Experience</div>
+                    <div id="workContent" class="collapsible-section-content">
+                        <p style="color:aliceblue">Wipro Limited</p>
+                        <i style="color: blue;">2021 - 2023</i>
+                        <ul>
+                            <li>Scheduling the data and transfer the data to the google
+                                cloud using the teradata Platform. </li>
+                            <li>Analyze of potential issues with the team and executing the
+                                automative plan for completing a task as schedule.</li>
+                        </ul>
+                        <p style="color:aliceblue">Fabevy</p>
+                        <i style="color: blue;">2023 - 2024</i>
+                        <ul>
+                            <li>Designed and analyzed websites for diverse projects.  </li>
+                            <li>Revitalized wed experiences with HTML5,CSS, Javascript, ES6, Bootstrap, React js, Redux for enhanced user
+                                management and inituitive design.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Social Media -->
+                <div class="collapsible-section mt-4">
+                    <div class="collapsible-section-header d-flex gap-5" onclick="toggleSection('socialMediaContent')">Social Media</div>
+                        <div id="socialMediaContent" class="collapsible-section-content">
+                            <p><a href="https://www.linkedin.com/in/jaishree-muralieaswaran/" target="_blank"><i class="fab fa-linkedin"></i></a> : jaishree-muralieaswaran</p>
+                            <p><a href="callme"><i class="fa-solid fa-phone"></i></a> : +91-8667634239</p>
+                            <p><a href="mailto:jaishree892@gmail.com"><i class="far fa-envelope"></i></a> : jaishree892@gmail.com</p>
+                            <p><a href="https://github.com/mJaishree"><i class="fab fa-github"></i></a> : mJaishree</p>
+                        </div>
+                    </div>
+                <!-- Declaration -->
+                <div class="collapsible-section">
+                    <div class="collapsible-section-header" onclick="toggleSection('declareContent')">Declaration</div>
+                    <div id="declareContent" class="collapsible-section-content">
+                        <p>I hereby declare that the above-mentioned information is true to the best of my knowledge and belief. I understand that any false statement may result in disqualification from consideration or termination if employed.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Icons -->
+        <div class="text-center" style="font-size: larger;">
+            <a href="https://github.com/mJaishree"><i class="fab fa-github"></i></a>
+            <a href="mailto:jaishree892@gmail.com"><i class="far fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/jaishree-muralieaswaran/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+
+
+    <script>
+        function toggleSection(sectionId) {
+            var sectionContent = document.getElementById(sectionId);
+            if (sectionContent.style.display === "block") {
+                sectionContent.style.display = "none";
+            } else {
+                sectionContent.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
